@@ -1,7 +1,9 @@
 package co.inventorsoft.jdbc.model;
 
-import java.util.Objects;
+import org.springframework.stereotype.Component;
 
+import java.util.Objects;
+@Component
 public class MailRequest {
     private long id;
     private String recipient;

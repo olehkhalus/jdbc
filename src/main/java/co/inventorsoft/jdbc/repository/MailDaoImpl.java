@@ -2,6 +2,7 @@ package co.inventorsoft.jdbc.repository;
 
 import co.inventorsoft.jdbc.configuration.Driver;
 import co.inventorsoft.jdbc.model.Mail;
+import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -9,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
-
+@Repository
 public class MailDaoImpl implements MailDao {
 
      private static final String TABLE_MAIL_COLUMN_ID = "id";

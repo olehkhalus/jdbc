@@ -1,5 +1,7 @@
 package co.inventorsoft.jdbc.configuration;
 
+import org.springframework.context.annotation.Configuration;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -9,7 +11,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-
+@Configuration
 public class Driver {
 
     public static Statement createStatement() {
